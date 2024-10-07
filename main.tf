@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "us-west-2" # Change this to your desired region
+  region = "global"
 }
 
 # Define the EC2 instance
