@@ -4,16 +4,16 @@ provider "aws" {
 
 # Define the EC2 instance
 resource "aws_instance" "app_server" {
-  ami           = "ami-0c9b9f8021f61b434"
-  instance_type = "t2.large"
+  ami           = "ami-0929f698754f34ba7"
+  instance_type = "t2.micro"
 
-#   # Assign the security group to the instance
-#   vpc_security_group_ids = [aws_security_group.app_sg.id]
+  # Assign the security group to the instance
+  vpc_security_group_ids = [aws_security_group.app_sg.id]
 
   # Add a tag to the instance
-#   tags = {
-#     Name = "JavaMicroserviceInstance"
-#   }
+  tags = {
+    Name = "JavaMicroserviceInstance"
+  }
 }
 
 # Define the Security Group to allow SSH and HTTP traffic
