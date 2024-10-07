@@ -5,7 +5,7 @@ provider "aws" {
 # Define the EC2 instance
 resource "aws_instance" "app_server" {
   ami           = "ami-0c9b9f8021f61b434"
-  instance_type = "t2.small"
+  instance_type = "t2.large"
 
 #   # Assign the security group to the instance
 #   vpc_security_group_ids = [aws_security_group.app_sg.id]
