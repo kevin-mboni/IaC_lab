@@ -4,7 +4,7 @@ provider "aws" {
 
 # Define the EC2 instance
 resource "aws_instance" "app_server" {
-  ami           = "ami-0c55b159cbfafe1f0"
+  ami           = "ami-0c9b9f8021f61b434"
   instance_type = "t2.micro"
 
   # Assign the security group to the instance
